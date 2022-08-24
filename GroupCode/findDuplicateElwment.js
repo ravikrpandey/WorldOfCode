@@ -7,7 +7,6 @@ let len = arr.length
 function duplicateElement(arr) {
     for(let i=0; i<len; i++) {
        
-
             if(arr[i] === arr[i+1]) {
                 console.log(arr[i])
             }
