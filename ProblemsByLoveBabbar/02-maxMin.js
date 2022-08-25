@@ -12,7 +12,7 @@
 // Explanation: min = -4, max =  5. Sum = -4 + 5 = 1
 
 let arr = [1000, 11, 445, 1, 330, 3000];
-var arr_size = 6;
+var arr_size = arr.length;
 
 
 function getMinMax(arr, n) {
