@@ -3,9 +3,8 @@
 // add an element in unsorted array 
 
 let arr = [10, 11, 12, 14, 16, 18, 20];
-let n = 7
+let n = 4
 let key = 24;
-let cap = 10
 let i;
     // Javascript program to implement insert
     // operation in an unsorted array.
@@ -15,12 +14,12 @@ let i;
     // function  returns n + 1
     // if insertion is successful,
     // else n.
-    function insertSorted(arr, n, key, capacity) {
+    function insertSorted(arr, n, key ) {
           
         // Cannot insert more elements
         // if n is already more than
         // or equal to capacity
-        if (n >= capacity)
+        if (n >= arr)
             return n;
       
         arr[n] = key;
@@ -34,7 +33,7 @@ let i;
     
  
     // Inserting key
-    n = insertSorted(arr, n, key, capacity);
+    n = insertSorted(arr, n, key);
  
     console.log("After Insertion: ");
     for (i = 0; i < n; i++)
