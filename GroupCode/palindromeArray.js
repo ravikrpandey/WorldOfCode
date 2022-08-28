@@ -14,30 +14,30 @@
 
 
 
-let arr = 111;
+// let arr = 111;
 
-let sum = 0;
+// let sum = 0;
 // sum = Math.floor(sum)
 
 
 
-function checkPalindrome(arr) {
+// function checkPalindrome(arr) {
 
-    let temp = arr    
-    while (arr > 0) {
-        let r = arr % 10;
-        sum = (sum * 10) + r;
-        arr = Math.floor(arr / 10);
-        
-    }
-    console.log(sum);
-    if (temp == sum) {
-        console.log("true");
-    } else {
-        console.log('false')
-    }
-}
-checkPalindrome(arr)
+//     let temp = arr    
+//     while (arr > 0) {
+//         let r = arr % 10;
+//         sum = (sum * 10) + r;
+//         arr = Math.floor(arr / 10);
+
+//     }
+//     console.log(sum);
+//     if (temp == sum) {
+//         console.log("true");
+//     } else {
+//         console.log('false')
+//     }
+// }
+// checkPalindrome(arr)
 
 // ============================================
 
@@ -79,3 +79,38 @@ checkPalindrome(arr)
 // }
 // let result = palindrome("121");
 // console.log(result);
+
+
+//========================================
+
+
+let arr = [111, 222, 333, 444, 550];
+let str = ("" +arr).split('')
+let n = arr.length
+
+function PalinArray(str, n) {
+    let sum = 0
+
+    for (let i = 0; i < n; i++) {
+        let r = str[i]
+
+        let temp = r
+        while (r > 0) {
+
+            let s = r % 10 //1
+            sum = sum * 10 + s //1
+            r = Math.floor(r / 10)//1     
+        }
+        if (sum == temp) {
+            return 1
+        } else {
+            return 0
+        }
+    }
+
+}
+console.log(PalinArray(str, n));
+
+
+
+
