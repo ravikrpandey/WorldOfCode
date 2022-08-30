@@ -11,3 +11,23 @@
 // {2, 8, 3, 1} = 2*0 + 8*1 + 3*2 + 1*3 = 17
 
 
+function maximumMaximizes(arr, n) {
+    
+    let result = Number.MIN_VALUE
+    let sum = 0;
+
+    for (let i=0; i<n; i++) {
+
+        for (let j=0; j<n; j++) {
+            let idx = [i + j] % n
+            sum = sum + j * arr[idx];
+        }
+        result = Math.max(result, sum)
+    }
+    return result
+
+}
+let arr = [ 8, 3, 1, 2 ];
+let n = arr.length;
+
+console.log(maximumMaximizes(arr, n));
