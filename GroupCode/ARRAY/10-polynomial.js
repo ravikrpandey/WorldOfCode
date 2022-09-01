@@ -36,7 +36,7 @@
 
 
 
-function twoArrSum(a,b){
+function polynomialSum(a,b){
     let arr=[]
     if(a.length<=b.length){
       let temp=[...a]
@@ -49,7 +49,7 @@ function twoArrSum(a,b){
         arr.push(a[i]+b[i])
       }
       else if(Array.isArray(a[i]) && Array.isArray(b[i])){
-         arr.push(twoArrSum(a[i],b[i]))
+         arr.push(polynomialSum(a[i],b[i]))
       }
       else if(!Array.isArray(a[i]) && Array.isArray(b[i])){
         b[i][0]=b[i][0]+a[i]
@@ -65,4 +65,4 @@ function twoArrSum(a,b){
       
   }
   let A = [4, 0, [0, -5], [-2,1]],    B =  [1, 0, [0, 1]]
-  console.log(twoArrSum(A,B))
+  console.log(polynomialSum(A,B))
