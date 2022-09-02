@@ -80,36 +80,53 @@
 // let result = palindrome("121");
 // console.log(result);
 
+//===============================================
+
+// Check palinddrome number using recursion
+
+function solution(n) {
+    let a = n.length
+    if (a <= 1) {
+        return 1;
+    }
+      if (n[0] !== n[a-1]) {
+          return 0;
+      }
+      return solution(n.slice(1, -1))
+  }
+  
+  console.log(solution(121));
+
 
 //========================================
 
 
-let arr = [111, 222, 333, 444, 550];
-let str = ("" +arr).split('')
-let n = arr.length
+// let arr = [111, 222, 333, 444, 550];
+// let str = ("" +arr).split('')
+// let n = arr.length
 
-function PalinArray(str, n) {
-    let sum = 0
+// function PalinArray(str, n) {
+//     let sum = 0
 
-    for (let i = 0; i < n; i++) {
-        let r = str[i]
+//     for (let i = 0; i < n; i++) {
+//         let r = str[i]
 
-        let temp = r
-        while (r > 0) {
+//         let temp = r
+//         while (r > 0) {
 
-            let s = r % 10 //1
-            sum = sum * 10 + s //1
-            r = Math.floor(r / 10)//1     
-        }
-        if (sum == temp) {
-            return 1
-        } else {
-            return 0
-        }
-    }
+//             let s = r % 10 //1
+//             sum = sum * 10 + s //1
+//             r = Math.floor(r / 10)//1     
+//         }
+//         if (sum == temp) {
+//             return 1
+//         } else {
+//             return 0
+//         }
+//     }
 
-}
-console.log(PalinArray(str, n));
+// }
+// console.log(PalinArray(str, n));
 
 
 
