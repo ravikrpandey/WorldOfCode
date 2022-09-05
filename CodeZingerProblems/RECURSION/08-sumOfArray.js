@@ -34,6 +34,12 @@
 
 // =============================================
 
-function sumOfArrayUsingRecursion(arr) {
-    
+function sumOfArrayUsingRecursion(arr, n) {
+    if (n <= 0) {
+        return 0;
+    }
+    return (sumOfArrayUsingRecursion(arr, n - 1) + arr[n - 1]);
 }
+let arr = [1, 2, 3, 4, 5];
+let n = arr.length
+console.log(sumOfArrayUsingRecursion(arr, n));
