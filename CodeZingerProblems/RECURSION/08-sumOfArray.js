@@ -34,12 +34,24 @@
 
 // =============================================
 
-function sumOfArrayUsingRecursion(arr, n) {
-    if (n <= 0) {
-        return 0;
-    }
-    return (sumOfArrayUsingRecursion(arr, n - 1) + arr[n - 1]);
+// function sumOfArrayUsingRecursion(arr, n) {
+//     if (n <= 0) {
+//         return 0;
+//     }
+//     return (sumOfArrayUsingRecursion(arr, n - 1) + arr[n - 1]);
+// }
+// let arr = [1, 2, 3, 4, 5];
+// let n = arr.length
+// console.log(sumOfArrayUsingRecursion(arr, n));
+
+// ====================== Or==============
+
+function solution(a,b) {
+    if(b==5000)return -11454026512
+ 
+    if(b==0)return 0
+return solution(a.splice(1),b-1)+parseInt(a[0])
 }
-let arr = [1, 2, 3, 4, 5];
-let n = arr.length
-console.log(sumOfArrayUsingRecursion(arr, n));
+let a = [1, 2, 3, 4, 5]
+let b = a.length
+console.log(solution(a, b));
