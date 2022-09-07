@@ -168,7 +168,7 @@ console.log(fullName.trim())
 // ==============================================
 
 
-// 13. concat(): it takes many substrings and joins them.
+// 13. concat() ==> it takes many substrings and joins them.
 
 // string.concat(substring, substring, substring)
 
@@ -181,3 +181,31 @@ console.log(fullName.trim())
 
 
 // =============================================
+
+// 14. startsWith() ==> it takes a substring as an argument and it checks if the string starts with that specified substring. It returns a boolean(true or false).
+
+// //syntax
+// string.startsWith(substring)
+
+
+// let string = 'Love is the best to in this world'
+
+// console.log(string.startsWith('Love'))   // true
+// console.log(string.startsWith('love'))   // false
+// console.log(string.startsWith('world'))  // false
+
+// let country = 'Finland'
+
+// console.log(country.startsWith('Fin'))   // true
+// console.log(country.startsWith('fin'))   // false
+// console.log(country.startsWith('land'))  //  false
+
+// ============================================
+
+// 15. endsWith() ==> it takes a substring as an argument and it checks if the string ends with that specified substring. It returns a boolean(true or false).
+// string.endsWith(substring)
+// let string = 'Love is the most powerful feeling in the world'
+
+// console.log(string.endsWith('world'))         // true
+// console.log(string.endsWith('love'))          // false
+// console.log(string.endsWith('in the world')) // true
