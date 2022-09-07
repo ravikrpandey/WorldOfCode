@@ -166,3 +166,18 @@ console.log(fullName.trim())
 // console.log(string.lastIndexOf('JavaScript')) // 38
 
 // ==============================================
+
+
+// 13. concat(): it takes many substrings and joins them.
+
+// string.concat(substring, substring, substring)
+
+
+// let string = '30'
+// console.log(string.concat("Days", "Of", "JavaScript")) // 30DaysOfJavaScript
+
+// let country = 'Fin'
+// console.log(country.concat("land")) // Finland
+
+
+// =============================================
