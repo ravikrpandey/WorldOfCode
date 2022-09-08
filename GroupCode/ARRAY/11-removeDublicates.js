@@ -1,4 +1,4 @@
-// Given an array [2, 5, 4, 5, 6, 7, 6, 5, 7, 8, 65, 34] => here we have to remove the diblicates elements and log the unique elements.
+// Given an array [2, 5, 4, 5, 6, 7, 6, 5, 7, 8, 65, 34] => here we have to remove the dublicates elements and log the unique elements.
 
 function checkUnique(arr) {
 
