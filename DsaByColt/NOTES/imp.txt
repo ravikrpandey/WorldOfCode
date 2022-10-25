@@ -1,0 +1,10 @@
+some patterns...
+--> Frequency Counter
+--> Multiple Pointers
+--> Sliding Window
+--> Divide and Conquer
+--> Dynamic Programming
+--> Greedy Algorithm
+--> BackTracking
+--> Many more!
+
