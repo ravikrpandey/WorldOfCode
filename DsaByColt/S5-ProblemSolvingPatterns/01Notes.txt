@@ -1,0 +1,15 @@
+HOW DO YOU IMPROVE?
+
+1. Device a plan for solving problems.
+2. Master common problem solving patterns.
+
+SOME PATTERNS ...,
+
+--> Frequency Counter
+--> Multiple Pointers
+--> Sliding Window
+--> Divide and Conquer
+--> Dynamic Programming
+--> Greedy Algorithm
+--> BackTracking
+--> Many more!
